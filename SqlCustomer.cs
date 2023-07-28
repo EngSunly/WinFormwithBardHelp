@@ -20,7 +20,7 @@ namespace WinFormwithBardHelp
         private void Form1_Load(object sender, EventArgs e, TextBox txtName)
         {
             reloadFORM();
-            
+
         }
 
         public void reloadFORM()
@@ -47,7 +47,7 @@ namespace WinFormwithBardHelp
                          txtName.Text = reader["Name"].ToString();
                          txtAddress.Text = reader["Address"].ToString();*/
 
-                        cuss.clCusId = int.Parse(s: reader["CusId"].ToString()); 
+                        cuss.clCusId = int.Parse(s: reader["CusId"].ToString());
                         cuss.clName = reader["Name"].ToString();
                         cuss.clAddress = reader["Address"].ToString();
 
@@ -58,7 +58,7 @@ namespace WinFormwithBardHelp
         }
         public class clCustomer
         {
-            public int  clCusId { get ; set; }
+            public int clCusId { get; set; }
             public string clName { get; set; }
             public string clAddress { get; set; }
         }
@@ -87,7 +87,7 @@ namespace WinFormwithBardHelp
                         txtAddress.Clear();
                     }
                     catch (Exception ex) { MessageBox.Show(ex.Message); }
-                    }
+                }
                 reloadFORM();
             }
         }
@@ -99,7 +99,7 @@ namespace WinFormwithBardHelp
 
         private void update_Click(object sender, EventArgs e)
         {
-            EditForm form2= new EditForm();
+            EditForm form2 = new EditForm();
             form2.ShowDialog();
             reloadFORM();
         }
@@ -110,7 +110,7 @@ namespace WinFormwithBardHelp
             connection.Open();
             string delId = txtDelete.Text;
 
-            SqlCommand delcmd = new SqlCommand("DELETE FROM Customers WHERE CusId = @delId",connection);
+            SqlCommand delcmd = new SqlCommand("DELETE FROM Customers WHERE CusId = @delId", connection);
             delcmd.Parameters.AddWithValue("@delId", delId);
             try
             {
@@ -125,9 +125,17 @@ namespace WinFormwithBardHelp
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        //create cellclick event
+        private void Display_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.Display.Rows[e.RowIndex];
+                txtCusId.Text = row.Cells["CID"].Value.ToString();
+                txtName.Text = row.Cells["CName"].Value.ToString();
+                txtAddress.Text = row.Cells["CAddress"].Value.ToString();
+            }
         }
+
     }
 }

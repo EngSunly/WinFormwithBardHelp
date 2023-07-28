@@ -28,266 +28,267 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.insert = new System.Windows.Forms.Button();
-            this.update = new System.Windows.Forms.Button();
-            this.delete = new System.Windows.Forms.Button();
-            this.txtCusId = new System.Windows.Forms.TextBox();
-            this.Display = new System.Windows.Forms.DataGridView();
-            this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReloadBTN = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDelete = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Rule = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Display)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.SuspendLayout();
+            txtName = new TextBox();
+            txtAddress = new TextBox();
+            insert = new Button();
+            update = new Button();
+            delete = new Button();
+            txtCusId = new TextBox();
+            Display = new DataGridView();
+            ReloadBTN = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            txtDelete = new TextBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            Rule = new Label();
+            CID = new DataGridViewTextBoxColumn();
+            cName = new DataGridViewTextBoxColumn();
+            cAddress = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)Display).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            SuspendLayout();
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.Wheat;
-            this.txtName.Location = new System.Drawing.Point(134, 82);
-            this.txtName.Name = "txtName";
-            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtName.Size = new System.Drawing.Size(125, 27);
-            this.txtName.TabIndex = 0;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txtName.BackColor = Color.Wheat;
+            txtName.Location = new Point(134, 82);
+            txtName.Name = "txtName";
+            txtName.RightToLeft = RightToLeft.Yes;
+            txtName.Size = new Size(125, 27);
+            txtName.TabIndex = 0;
+            txtName.TextAlign = HorizontalAlignment.Center;
             // 
             // txtAddress
             // 
-            this.txtAddress.BackColor = System.Drawing.Color.Wheat;
-            this.txtAddress.Location = new System.Drawing.Point(134, 135);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtAddress.Size = new System.Drawing.Size(125, 27);
-            this.txtAddress.TabIndex = 1;
-            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txtAddress.BackColor = Color.Wheat;
+            txtAddress.Location = new Point(134, 135);
+            txtAddress.Name = "txtAddress";
+            txtAddress.RightToLeft = RightToLeft.Yes;
+            txtAddress.Size = new Size(125, 27);
+            txtAddress.TabIndex = 1;
+            txtAddress.TextAlign = HorizontalAlignment.Center;
             // 
             // insert
             // 
-            this.insert.Location = new System.Drawing.Point(153, 168);
-            this.insert.Name = "insert";
-            this.insert.Size = new System.Drawing.Size(94, 29);
-            this.insert.TabIndex = 2;
-            this.insert.Text = "Insert";
-            this.insert.UseVisualStyleBackColor = true;
-            this.insert.Click += new System.EventHandler(this.insert_Click);
+            insert.Location = new Point(153, 168);
+            insert.Name = "insert";
+            insert.Size = new Size(94, 29);
+            insert.TabIndex = 2;
+            insert.Text = "Insert";
+            insert.UseVisualStyleBackColor = true;
+            insert.Click += insert_Click;
             // 
             // update
             // 
-            this.update.Location = new System.Drawing.Point(111, 283);
-            this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(94, 29);
-            this.update.TabIndex = 3;
-            this.update.Text = "Update";
-            this.update.UseVisualStyleBackColor = true;
-            this.update.Click += new System.EventHandler(this.update_Click);
+            update.Location = new Point(111, 283);
+            update.Name = "update";
+            update.Size = new Size(94, 29);
+            update.TabIndex = 3;
+            update.Text = "Update";
+            update.UseVisualStyleBackColor = true;
+            update.Click += update_Click;
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(203, 391);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(94, 29);
-            this.delete.TabIndex = 4;
-            this.delete.Text = "Delete";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
+            delete.Location = new Point(203, 391);
+            delete.Name = "delete";
+            delete.Size = new Size(94, 29);
+            delete.TabIndex = 4;
+            delete.Text = "Delete";
+            delete.UseVisualStyleBackColor = true;
+            delete.Click += delete_Click;
             // 
             // txtCusId
             // 
-            this.txtCusId.BackColor = System.Drawing.Color.Wheat;
-            this.txtCusId.Location = new System.Drawing.Point(134, 21);
-            this.txtCusId.Name = "txtCusId";
-            this.txtCusId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtCusId.Size = new System.Drawing.Size(125, 27);
-            this.txtCusId.TabIndex = 5;
-            this.txtCusId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txtCusId.BackColor = Color.Wheat;
+            txtCusId.Location = new Point(134, 21);
+            txtCusId.Name = "txtCusId";
+            txtCusId.RightToLeft = RightToLeft.Yes;
+            txtCusId.Size = new Size(125, 27);
+            txtCusId.TabIndex = 5;
+            txtCusId.TextAlign = HorizontalAlignment.Center;
             // 
             // Display
             // 
-            this.Display.AllowUserToAddRows = false;
-            this.Display.AllowUserToDeleteRows = false;
-            this.Display.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Display.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cID,
-            this.cName,
-            this.cAddress});
-            this.Display.Location = new System.Drawing.Point(338, 132);
-            this.Display.Name = "Display";
-            this.Display.ReadOnly = true;
-            this.Display.RowHeadersWidth = 51;
-            this.Display.RowTemplate.Height = 29;
-            this.Display.Size = new System.Drawing.Size(448, 249);
-            this.Display.TabIndex = 6;
-            // 
-            // cID
-            // 
-            this.cID.HeaderText = "CustomerID";
-            this.cID.MinimumWidth = 6;
-            this.cID.Name = "cID";
-            this.cID.ReadOnly = true;
-            this.cID.Width = 125;
-            // 
-            // cName
-            // 
-            this.cName.HeaderText = "Name";
-            this.cName.MinimumWidth = 6;
-            this.cName.Name = "cName";
-            this.cName.ReadOnly = true;
-            this.cName.Width = 125;
-            // 
-            // cAddress
-            // 
-            this.cAddress.HeaderText = "Address";
-            this.cAddress.MinimumWidth = 6;
-            this.cAddress.Name = "cAddress";
-            this.cAddress.ReadOnly = true;
-            this.cAddress.Width = 125;
+            Display.AllowUserToAddRows = false;
+            Display.AllowUserToDeleteRows = false;
+            Display.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Display.Columns.AddRange(new DataGridViewColumn[] { CID, cName, cAddress });
+            Display.Location = new Point(338, 132);
+            Display.Name = "Display";
+            Display.ReadOnly = true;
+            Display.RowHeadersWidth = 51;
+            Display.RowTemplate.Height = 29;
+            Display.Size = new Size(448, 249);
+            Display.TabIndex = 6;
+            Display.CellClick += Display_CellClick;
             // 
             // ReloadBTN
             // 
-            this.ReloadBTN.Location = new System.Drawing.Point(338, 97);
-            this.ReloadBTN.Name = "ReloadBTN";
-            this.ReloadBTN.Size = new System.Drawing.Size(94, 29);
-            this.ReloadBTN.TabIndex = 7;
-            this.ReloadBTN.Text = "Reload";
-            this.ReloadBTN.UseVisualStyleBackColor = true;
-            this.ReloadBTN.Click += new System.EventHandler(this.ReloadBTN_Click);
+            ReloadBTN.Location = new Point(338, 97);
+            ReloadBTN.Name = "ReloadBTN";
+            ReloadBTN.Size = new Size(94, 29);
+            ReloadBTN.TabIndex = 7;
+            ReloadBTN.Text = "Reload";
+            ReloadBTN.UseVisualStyleBackColor = true;
+            ReloadBTN.Click += ReloadBTN_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "txtCusId";
+            label1.AutoSize = true;
+            label1.Location = new Point(62, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 20);
+            label1.TabIndex = 8;
+            label1.Text = "txtCusId";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "txtName";
+            label2.AutoSize = true;
+            label2.Location = new Point(62, 85);
+            label2.Name = "label2";
+            label2.Size = new Size(66, 20);
+            label2.TabIndex = 9;
+            label2.Text = "txtName";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "txtAddress";
+            label3.AutoSize = true;
+            label3.Location = new Point(49, 138);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 20);
+            label3.TabIndex = 10;
+            label3.Text = "txtAddress";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 248);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(227, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Click the button below to update";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            label5.AutoSize = true;
+            label5.Location = new Point(49, 248);
+            label5.Name = "label5";
+            label5.Size = new Size(227, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Click the button below to update";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 361);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 20);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Input ID Below to Delete";
+            label4.AutoSize = true;
+            label4.Location = new Point(74, 361);
+            label4.Name = "label4";
+            label4.Size = new Size(173, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Input ID Below to Delete";
             // 
             // txtDelete
             // 
-            this.txtDelete.Location = new System.Drawing.Point(49, 393);
-            this.txtDelete.Name = "txtDelete";
-            this.txtDelete.Size = new System.Drawing.Size(125, 27);
-            this.txtDelete.TabIndex = 13;
+            txtDelete.Location = new Point(49, 393);
+            txtDelete.Name = "txtDelete";
+            txtDelete.Size = new Size(125, 27);
+            txtDelete.TabIndex = 13;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Chocolate;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 208);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.Chocolate;
+            pictureBox1.Location = new Point(32, 7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(265, 208);
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 221);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(265, 108);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.BackColor = SystemColors.ButtonShadow;
+            pictureBox2.Location = new Point(32, 221);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(265, 108);
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox3.Location = new System.Drawing.Point(32, 345);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(276, 93);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.BackColor = SystemColors.ControlDark;
+            pictureBox3.Location = new Point(32, 345);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(276, 93);
+            pictureBox3.TabIndex = 16;
+            pictureBox3.TabStop = false;
             // 
             // Rule
             // 
-            this.Rule.AutoSize = true;
-            this.Rule.Location = new System.Drawing.Point(303, 28);
-            this.Rule.Name = "Rule";
-            this.Rule.Size = new System.Drawing.Size(392, 20);
-            this.Rule.TabIndex = 17;
-            this.Rule.Text = "ID can only be integar Name and Adress has no contrainst";
+            Rule.AutoSize = true;
+            Rule.Location = new Point(303, 28);
+            Rule.Name = "Rule";
+            Rule.Size = new Size(392, 20);
+            Rule.TabIndex = 17;
+            Rule.Text = "ID can only be integar Name and Adress has no contrainst";
+            // 
+            // CID
+            // 
+            CID.HeaderText = "CustomerID";
+            CID.MinimumWidth = 6;
+            CID.Name = "CID";
+            CID.ReadOnly = true;
+            CID.Width = 125;
+            // 
+            // cName
+            // 
+            cName.HeaderText = "Name";
+            cName.MinimumWidth = 6;
+            cName.Name = "cName";
+            cName.ReadOnly = true;
+            cName.Width = 125;
+            // 
+            // cAddress
+            // 
+            cAddress.HeaderText = "Address";
+            cAddress.MinimumWidth = 6;
+            cAddress.Name = "cAddress";
+            cAddress.ReadOnly = true;
+            cAddress.Width = 125;
             // 
             // SqlCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Rule);
-            this.Controls.Add(this.txtDelete);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ReloadBTN);
-            this.Controls.Add(this.Display);
-            this.Controls.Add(this.txtCusId);
-            this.Controls.Add(this.delete);
-            this.Controls.Add(this.update);
-            this.Controls.Add(this.insert);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Name = "SqlCustomer";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Display)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Rule);
+            Controls.Add(txtDelete);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(ReloadBTN);
+            Controls.Add(Display);
+            Controls.Add(txtCusId);
+            Controls.Add(delete);
+            Controls.Add(update);
+            Controls.Add(insert);
+            Controls.Add(txtAddress);
+            Controls.Add(txtName);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox3);
+            Name = "SqlCustomer";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)Display).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
+        private void Display_CellClick1(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -314,5 +315,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label Rule;
+        private DataGridViewTextBoxColumn CID;
     }
 }
